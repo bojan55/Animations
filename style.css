@@ -20,11 +20,17 @@ body {
     font-size: 5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.section h1 span {
+    opacity: 0;
     transition: all 0.3s ease;
+    transform: translateY(50px);
 }
 
 .section .fadeMove {
-    transform: translateY(50px);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .section2 .images {
