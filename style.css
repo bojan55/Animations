@@ -49,3 +49,10 @@ body {
     font-size: 3rem;
     text-transform: capitalize;
 }
+
+.border-line {
+    height: 4px;
+    width: 0%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
