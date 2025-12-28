@@ -1,3 +1,4 @@
+//heading
 let textTag = document.querySelector('.section1 h1');
 let text = textTag.innerText;
 let splittedText = text.split('');
@@ -23,6 +24,7 @@ let interval = setInterval(() => {
     }
 }, 80);
 
+//line
 let border = document.querySelector(".border-line");
 let animationWidth = 0;
 window.onscroll = () => {
@@ -44,4 +46,17 @@ window.onscroll = () => {
     border.style.width = animationWidth + '%';
     this.oldScroll = this.scrollY;
 
+    //images
+    let sectionForAnimation = document.querySelector('.section2 .images');
+    let sectionPosition = sectionForAnimation.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 1.2;
+    let leftImage = document.querySelector('.slideFromLeft');
+    let rightImage = document.querySelector('.slideFromRight');
+
+    if(sectionPosition < screenPosition){
+        leftImage.classList.add('animated');
+        rightImage.classList.add('animated');
+    }
 }
+
+

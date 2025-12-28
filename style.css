@@ -40,6 +40,22 @@ body {
 
 .section2 .images img {
     width: 50%;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.section2 .images .slideFromLeft {
+    transform: translateX(-50%);
+
+}
+
+.section2 .images .slideFromRight {
+    transform: translateX(50%);
+}
+
+.section2 .images .animated {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .section2 h1 {
